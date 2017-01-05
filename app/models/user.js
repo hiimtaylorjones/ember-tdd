@@ -1,4 +1,5 @@
 //
+import Ember from 'ember';
 import DS from 'ember-data';
 
 export default DS.Model.extend({
@@ -6,7 +7,7 @@ export default DS.Model.extend({
   email: DS.attr('string'),
   upvotes: DS.attr('number'),
   downvotes: DS.attr('number'),
-  karma() {
+  karma: Ember.computed( function() {
     return this.get('upvotes') - this.get('downvotes');
-  }
+  })
 });
