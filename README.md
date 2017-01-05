@@ -1,53 +1,14 @@
-# Tdd
+# Test Driven Javascript With EmberJS
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A few months ago, I was given the opportunity to write about some really interesting stuff
+relating to test driven development and javascript. This project contains examples and learning
+from that piece.
 
-## Prerequisites
+## What's In Here So Far?
 
-You will need the following things properly installed on your computer.
+* Walking through Unit Tests
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+## What's Needing To Be Added?
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd tdd`
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+* Walking through Controller Tests
+* Walking through Integration Test

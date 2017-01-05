@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('user', 'Unit | Model | user', {
@@ -12,14 +11,12 @@ test('it exists', function(assert) {
   assert.ok(!!model);
 });
 
-test('must contain a name and a default known speed of light', function(assert) {
+test('must contain a name', function(assert) {
   let model = this.subject({ name: 'testing name'});
   assert.equal(model.get('name'), 'testing name');
-  assert.equal(model.get('knownSpeedOfLight'), 0);
 });
 
-test('it can learn the speed of light', function(assert) {
-  let model = this.subject({ name: 'Taylor'});
-  Ember.run(() => model.learnSpeedOfLight());
-  assert.equal(model.get('knownSpeedOfLight'), 100);
+test('should be able to retrieve the karma of a user', function(assert) {
+  let model = this.subject({ name: 'karma user', upvotes: 10, downvotes: 5});
+  assert.equal(model.get('karma'), 5);
 });
